@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luggage Detective - Game</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <h1>The Lamas</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="main.html">Home</a></li>
+                <li><a href="gamepage.html">Play Now</a></li>
+                <li><a href="story.html">Game Story</a></li> <!-- New Button -->
+            </ul>
+        </nav>
+
+    </header>
+
+    <div class="game-container">
+        <h1>Welcome to Luggage Detective</h1>
+        <p>Enter your name and select the difficulty level to start.</p>
+
+        <form id="startGameForm">
+            <input type="text" id="playerName" placeholder="Enter your name" required>
+            <select id="difficultyLevel">
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+            <button type="submit">Start Game</button>
+        </form>
+
+        <div id="gameMessages"></div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+
+</html>

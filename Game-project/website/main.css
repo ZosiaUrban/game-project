@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Slackey&display=swap');
+.slackey-regular {
+  font-family: "Slackey", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+body {
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    font-family: Inter, sans-serif;
+    font-weight: bolder;
+}
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color:#fa6d74;
+  padding: 10px 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .logo h1 {
+  color: white;
+  font-size: 24px;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+.navbar nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar nav ul li {
+  margin-right: 28px;
+}
+
+.navbar nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.navbar nav ul li a:hover {
+  color: #FFD700;
+}
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-icons a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.hero {
+    text-align: center;
+    position: relative;
+    padding: 150px 20px;
+    border-radius: 20px 20px 0px 0px;
+    margin: 60px 80px 0px 80px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('mainback.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(0);
+    transition: filter 0.2s ease;
+    z-index: 0;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.hero:hover::before {
+    filter: blur(1.4px);
+}
+
+
+.hero > * {
+    position: relative;
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 82px;
+    font-family: "slackey", serif ;
+    font-weight: bold;
+    color: white;
+}
+
+.hero .play-now-btn {
+    background-color: #fa6d74;
+    color: white;
+    font-size: 32px;
+    padding: 20px 45px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.hero .play-now-btn:hover {
+    background-color: #FF4500;
+}
+.second {
+    background-color: #b2dad3;
+    border-radius: 0px 0px 20px 20px;
+    margin: 0px 80px 0px 80px;
+    padding: 20px 0px 20px 0px;
+
+}
+
+/* Features Section */
+.second .features {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+.feature-card {
+    background-color: #fa6d74;
+    padding: 10px 30px 0px 30px;
+    border-radius: 25px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    transition: transform 0.3s;
+}
+.feature-card2 {
+    background-color: #f9b337;
+    padding: 10px 30px 0px 30px;
+    border-radius: 25px;
+    text-align: center;
+    color: white;
+    width: 200px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+.feature-card3 {
+    background-color: #7dc5c3;
+    padding: 10px 30px 0px 30px;
+    border-radius: 25px;
+    text-align: center;
+    color: white;
+    width: 200px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+    transition: transform 0.3s;
+}
+
+.feature-card:hover {
+    transform: scale(1.1);
+}
+.feature-card2:hover {
+    transform: scale(1.1);
+}
+.feature-card3:hover {
+    transform: scale(1.1);
+}
+
+/* Game Page */
+.game-container {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Game Over Page */
+.game-over {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.navigation-links a {
+    color: #FF6F61;
+    text-decoration: none;
+    margin: 0 10px;
+}
+/* Story Page Styles */
+.story-container {
+  max-width: 800px;
+  margin: 50px auto;
+  text-align: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.story-container h1 {
+  font-size: 36px;
+  color: #FF6F61;
+  margin-bottom: 20px;
+}
+
+.story-container p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+}
+
+
+/* Footer Styles */
+.footer {
+    background-color: #fa6d74;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 60px 0px 0px 0px;
+}
