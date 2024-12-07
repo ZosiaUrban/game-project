@@ -15,7 +15,6 @@ body {
     font-family: Inter, sans-serif;
     font-weight: bolder;
 }
-/* Navbar Styles */
 .navbar {
   display: flex;
   align-items: center;
@@ -132,7 +131,6 @@ body {
 
 }
 
-/* Features Section */
 .second .features {
     display: flex;
     justify-content: center;
@@ -182,57 +180,109 @@ body {
     transform: scale(1.1);
 }
 
-/* Game Page */
 .game-container {
+    width: 70%;
+    max-width: 800px;
+    margin: 120px auto;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 40px;
     text-align: center;
-    padding: 20px;
-    margin-top: 150px;
+    font-family: "Inter", sans-serif;
 }
+
 .game-container h1 {
-    font-family: Slackey, sans-serif;
-    font-size: 42px;
-    color:#FF6F61;
-    margin-bottom: 50px;
+    font-size: 38px;
+    font-family: "Slackey", sans-serif;
+    color: #fa6d74;
+    margin-bottom: 20px;
 }
+
 .game-container p {
-    font-family: 'Inter', sans-serif;
     font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
     font-weight: bold;
-    color: #333333;
-
 }
-.game-container button {
+
+.game-container .passenger-details {
+    background-color: #f9f9f9;
+    padding: 20px 30px;
     border-radius: 15px;
-    border-width: 0.5px;
-    padding: 10px 30px 10px 30px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    text-align: left;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #333;
+    max-width: 500px;
+    font-family: "Inter", sans-serif;
+}
+
+.game-container .passenger-details h3 {
+    font-size: 20px;
+    color: #fa6d74;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.game-container .passenger-details p {
+    margin: 5px 0;
     font-size: 16px;
-    background-color: #f9b337;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
-
-}
-.game-container button:hover{
-    background-color: #FFD700;
-    transform: scale(1.1);
-
-}
-.game-container form input{
-    border-radius: 15px;
-    border-width: thin;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 10px 25px 10px 25px;
-    margin-right: 18px;
-
-}
-.game-container form select{
-    border-radius: 15px;
-    border-width: thin;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 10px 25px 10px 25px;
-    margin-right: 18px;
+    color: #555;
 }
 
-/* Story Page */
+.game-container .fact {
+    font-size: 18px;
+    font-style: italic;
+    color: #444;
+    margin-top: 20px;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.game-container input[type="text"] {
+    width: 70%;
+    padding: 15px;
+    font-size: 16px;
+    margin: 20px 0;
+    border-radius: 10px;
+    border: 2px solid #fa6d74;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.game-container input[type="text"]:focus {
+    border-color: #ff7043;
+    outline: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.game-container button {
+    font-size: 18px;
+    padding: 10px 30px;
+    background-color: #fa6d74;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.game-container button:hover {
+    background-color: #ff7043;
+    transform: scale(1.05);
+}
+.game-container .info-section {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #666;
+}
+
 .story-container {
   max-width: 800px;
   margin: 80px auto;
@@ -259,7 +309,6 @@ body {
 }
 
 
-/* Footer */
 .footer {
     background-color: #fa6d74;
     color: white;
