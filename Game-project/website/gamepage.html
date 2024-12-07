@@ -9,36 +9,38 @@
 <body>
     <header class="navbar">
         <div class="logo">
-            <h1>The Lamas.</h1>
+            <h1>The Lamas</h1>
         </div>
         <nav>
             <ul>
                 <li><a href="main.html">Home</a></li>
                 <li><a href="gamepage.html">Play Now</a></li>
-                <li><a href="story.html">Game Story</a></li> <!-- New Button -->
+                <li><a href="story.html">Game Story</a></li>
             </ul>
         </nav>
-
     </header>
 
     <div class="game-container">
         <h1>Welcome to Luggage Detective</h1>
         <p>Enter your name and select the difficulty level to start.</p>
 
-        <form id="startGameForm">
-            <input type="text" id="playerName" placeholder="Enter your name" required>
-            <select id="difficultyLevel">
-                <option value="easy">Easy</option>
-                <option value="medium">Medium</option>
-                <option value="hard">Hard</option>
-            </select>
-            <button type="submit">Start Game</button>
-        </form>
+       <form id="startGameForm">
+    <label for="playerName">Enter your name:</label>
+    <input type="text" id="playerName" required>
+    <label for="difficultyLevel">Select difficulty:</label>
+    <select id="difficultyLevel">
+        <option value="easy">Easy</option>
+        <option value="medium">Medium</option>
+        <option value="hard">Hard</option>
+    </select>
+    <button type="submit">Start Game</button>
+           <script type="module" src="main.js"></script>
+
+</form>
+
 
         <div id="gameMessages"></div>
     </div>
     <script src="main.js"></script>
 </body>
-
-
 </html>
